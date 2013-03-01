@@ -1,4 +1,8 @@
-var connect = require('connect');
+var 
+    connect = require('connect'), 
+    conf = require('./conf')
+;
+
 connect.createServer(
-    connect.static(__dirname)
-).listen(3010);
+    connect.static(__dirname + '/public')
+).listen(conf.port);

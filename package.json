@@ -1,0 +1,20 @@
+{
+  "name": "flowtime-prez",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "~2.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slyg/flowtime-prez.git"
+  },
+  "author": "",
+  "license": "BSD"
+}
