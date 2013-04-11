@@ -149,6 +149,11 @@ body {
 	vertical-align: middle;
 }
 
+.flowtime .very-small {
+	font-size: 0.15em;
+	vertical-align: middle;
+}
+
 .flowtime pre,
 .flowtime code {
 	font-family: monospace;
@@ -384,5 +389,9 @@ h1 {font-weight: bold;}
     0% {-webkit-transform: scale(1);}
     50% {-webkit-transform: scale(1.05);}
 }
+
+table {background: #333;}
+th, td {padding: 5px; border: 1px solid #666;}
+th {background: #999; color: #000; text-shadow: none;}
 
 
