@@ -58,7 +58,7 @@
 			</div>
 			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
 				<div class="wrapper">
-					<h2>Next-coming steps</h2>
+					<h2>Upcoming steps</h2>
 					<ul>
     					<li>Tetra Mail <span class="small">with Iris</span> - <strong>Thierry &amp; Thomas</strong></li>
     					<li>Doc improvements - <strong>Fred</strong></li>
@@ -79,27 +79,27 @@
 			</div>
 			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
 				<div class="wrapper">
-					<blockquote style="text-align: center;">This projects stands for one main reason : <br /><br /><strong>Maintainability</strong></blockquote>
+					<blockquote style="text-align: center;">These projects have one goal : <br /><br /><strong>Maintainability</strong></blockquote>
 				</div>
 			</div>
 			<div id="/section-3/page-3" class="ft-page" data-id="page-3">
 				<div class="wrapper">
 					<h2>Some thoughts</h2>
 					<ul>
-    					<li>Easiest API</li>
-    					<li>MVC pattern still</li>
-    					<li>Lib Agnostism</li>
+    					<li>Easier API</li>
+    					<li>MVC pattern</li>
+    					<li>Lib Agnostic</li>
     					<li>Build per platform (web, mobile, ieCrap)</li>
 					</ul>
 				</div>
 			</div>
 			<div id="/section-3/page-4" class="ft-page" data-id="page-4">
 				<div class="wrapper">
-					<h2>Next-coming</h2>
+					<h2>Upcoming</h2>
 					<ul>
     					<li>API change <small>(but legacy will be automatically updated)</small></li>
     					<li>AMD * (<- great in you want participate)</li>
-    					<li>Lib Agnostism</li>
+    					<li>Lib Agnostic</li>
     					<li>jQuery, Prototype, Scriptaculous will die</li>
     					<li>No globals anymore</li>
 					</ul>
@@ -109,10 +109,10 @@
 				<div class="wrapper">
 					<h2>API changes</h2>
 					<ul>
-					    <li>Ecosystem of helpers modules via dependecies declaration</li>
-    					<li><code>This</code> replaces <code>me</code></li>
+					    <li>Ecosystem of helpers modules via dependency declaration</li>
+    					<li>No more use for <code>me</code>;</li>
     					<li>Validation on model</li>
-    					<li>Replace <code>init</code> with constructors</li>
+    					<li>Replace <code>init</code> with constructors (maybe)</li>
     					<li>Improved scope and privacy</li>
     					<li>Reduced indentation</li>
     					<li><code>preventDefault</code> problematic</li>
@@ -128,7 +128,7 @@ define(['tetra/mvc/Model'], function(Model) {
 	
 	return new Model({
 	
-		target: '',
+		target: '/r/event',
 			
 		schema: {
 			"foo": {
@@ -152,143 +152,21 @@ define(['tetra/mvc/Model'], function(Model) {
 			
 			<div id="/section-3/page-6" class="ft-page" data-id="page-6">
 				<div class="wrapper">
-					<h2>And</h2>
+					<h2>Other Changes</h2>
 					<ul>
     					<li>AMD and lazy-loading</li>
     					<li>Inheritance (prototypal)</li>
-    					<li>Templating agnostism</li>
+    					<li>Templating agnostic</li>
     					<li>Tetra as a bunch of modules</li>
-    					<li>Use of external libs (AMD modules or kind of) in tetra and applications</li>
+    					<li>Use of external libs (AMD modules or similar) in tetra and applications</li>
     					<li>Promises</li>
     					<li>Etc.</li>
 					</ul>
 				</div>
 			</div>
-			
 		</div>
-		
-		<!--div class="ft-section" data-id="section-2">
-    		<div id="/section-2/page-1" class="ft-page" data-id="page-1">
-			     <div class="wrapper">
-    				<h2>Facts</h2>
-    				<ul>
-        				<li>Too much shipped <strong>unused code</strong> (prod &amp; repo)</li>
-        				<li>Too much JS <strong>3rd party dependencies</strong></li>
-    				</ul>
-    				<p><strong>Removing unused JS or CSS ⇒ removing unused JSPs first</strong></p>
-			     </div>
-			</div>
-			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
-			     <div class="wrapper">
-    				<h2>E.g.</h2>
-    				<p>Prototypejs = <strong>36%</strong> default JS package :-( <br /><span class="small">(used inline on cryptic pages - not maintained since ~2 years)</span></p>
-			     </div>
-			</div>
-		</div>
-		
-		<div class="ft-section" data-id="section-3">
-    		<div id="/section-3/page-1" class="ft-page" data-id="page-1">
-			     <div class="wrapper">
-    				<h2>Cleanup Tactical Roadmap</h2>
-    				<p style="padding: 5rem inherit; text-align: center;">
-        				Data <img src="../assets/img/pie-chart-32.png" style="display:inline; vertical-align: middle;" /> 
-        				&rsaquo; Action <img src="../assets/img/knife.png" style="display:inline; vertical-align: middle;" /> 
-        				&rsaquo; Data <img src="../assets/img/pie-chart-32.png" style="display:inline; vertical-align: middle;" /> 
-        				&rsaquo; Action <img src="../assets/img/knife.png" style="display:inline; vertical-align: middle;" />
-        				<br />
-        				^---------------------------------------'
-    				</p>
-			     </div>
-			</div>
-			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
-			     <div class="wrapper">
-    				<h3>Step 1 (Data)</h3>
-    				<ul>
-        				<li>Listing potentially unused jsps <sub class="small">(Tomcat compiled jsps)</sub></li>
-        				<li>Listing tetra modules using directly 3rd-party dep</li>
-        				<li>Listing commented code JS</li>
-    				</ul>
-			     </div>
-			</div>
-			<div id="/section-3/page-3" class="ft-page" data-id="page-3">
-			     <div class="wrapper">
-    				<h3>Step 2 (Action)</h3>
-    				<ul>
-        				<li>Confirmed unused jsps removal - <span class="stamp"><strong>js(p) carnage 1</strong></span> </li>
-        				<li>Migrate 3rd party dep &rarr; tetra interface</li>
-        				<li>Destroy commented code</li>
-    				</ul>
-			     </div>
-			</div>
-			<div id="/section-3/page-4" class="ft-page" data-id="page-4">
-			     <div class="wrapper">
-    				<h3>Step 3 (Data)</h3>
-    				<ul>
-        				<li>Listing non-native JS obj (exclude libs)</li>
-        				<li>Listing jsps w/ inline js script</li>
-    				</ul>
-			     </div>
-			</div>
-			<div id="/section-3/page-4" class="ft-page" data-id="page-4">
-			     <div class="wrapper">
-    				<h3>Step 4 (Action)</h3>
-    				<ul>
-        				<li>Migrate non-native methods to lib or destroy</li>
-        				<li>Migrate inline js to tetra modules</li>
-    				</ul>
-			     </div>
-			</div>
-			<div id="/section-3/page-5" class="ft-page" data-id="page-5">
-			     <div class="stack-center">
-			         <div class="stacked-center">
-    			         <img src="../assets/img/8496106962_ffd8bec11c_z.jpg" class="canvas" />
-			         </div>
-			     </div>
-			</div>
-		</div>
-		
-		<div class="ft-section" data-id="section-4">
-    		<div id="/section-4/page-1" class="ft-page" data-id="page-1">
-			     <div class="wrapper">
-    				<h2>JS(P) Carnage 1 <sub class="small">(frontal offensive)</sub></h2>
-    				<ul>
-        				<li>Total number of JSPs : <strong>~3000</strong></li>
-        				<li>Initial unused suspects count : <strong>~2400</strong> &lsaquo;- woops</li>
-        				<li>Scanned : <strong>~640</strong></li>
-        				<li>Removed : <strong>~70</strong> &lsaquo;- tough!</li>
-    				</ul>
-			     </div>
-			</div>
-			<div id="/section-4/page-2" class="ft-page" data-id="page-2">
-			     <div class="wrapper">
-    				<h2>Count update</h2>
-    				<p style="text-align: center; padding: 3rem inherit;" class="big">
-    				    <strong>970 suspects</strong><br /><br />
-    				    <small>Computing tomcat compiled *_jsp.java to map dependencies</small><br />
-    				    <small>Still need to compute w/ tiles including system</small>
-    				</p>
-			     </div>
-			</div>
-			<div id="/section-4/page-3" class="ft-page" data-id="page-3">
-			     <div class="stack-center">
-			         <div class="stacked-center">
-    			         <img src="../assets/img/8496111498_57bdb37b61_c.jpg" class="canvas" />
-			         </div>
-			     </div>
-			</div>
-			<div id="/section-4/page-4" class="ft-page" data-id="page-4
-			">
-			     <div class="stack-center">
-			         <div class="stacked-center">
-    			         <img src="../assets/img/8494998021_b2e0bf5977_c.jpg" class="canvas" />
-			         </div>
-			     </div>
-			</div>
-		</div-->
-		
 	</div>
 
-	
 	<script src="../js/brav1toolbox.js"></script>
 	<script src="../js/flowtime.js"></script>
 	<script src="../assets/js/prism.js"></script>
