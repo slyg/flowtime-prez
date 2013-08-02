@@ -1,0 +1,418 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Limbo Update</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../assets/css/reset.css">
+	<link rel="stylesheet" href="../css/flowtime.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../assets/css/prism.css">
+	<style type="text/css">
+		@font-face {
+		  font-family: 'Limbo';
+		  src: url('/limbo/fonts/limbo.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+		
+		body {
+			font-family: 'Lato', sans-serif;
+		}
+		
+		.limbo {
+			font-family: 'Limbo'
+		}
+		
+		h1 {
+			font-size: 180px !important;
+		}
+		
+		h1#main {
+			font-size: 200px !important;
+		}
+		
+		#cloud {
+			width: 350px; height: 120px;
+			
+			background: #f2f9fe;
+			background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+			background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+			background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+			background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+			background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+			
+			border-radius: 100px;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+			
+			position: relative;
+			margin: 120px auto 20px;
+		}
+
+		#cloud:after, #cloud:before {
+			content: '';
+			position: absolute;
+			background: #f2f9fe;
+			z-index: -1
+		}
+
+		#cloud:after {
+			width: 100px; height: 100px;
+			top: -50px; left: 50px;
+			
+			border-radius: 100px;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+		}
+
+		#cloud:before {
+			width: 180px; height: 180px;
+			top: -90px; right: 50px;
+			
+			border-radius: 200px;
+			-webkit-border-radius: 200px;
+			-moz-border-radius: 200px;
+		}
+
+		.shadow {
+			width: 350px;
+			position: absolute; bottom: -10px; 
+			background: #000;
+			z-index: -1;
+			
+			box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+			-webkit-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+			
+			border-radius: 50%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+		}
+		
+		.unstyled, .unstyled li {
+			list-style-type: none !important;
+			display: inline-block;
+			font-size: 16px;
+		}
+		
+		.unstyled li {
+			margin-left: 60px;
+		}
+		
+	</style>
+	
+</head>
+<body class="">
+	
+	<div class="flowtime">
+	
+	   <div class="ft-section" data-id="section-0">
+			<div id="/section-0/page-1" class="ft-page" data-id="page-1">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<div id="cloud" style="display: none"><span class='shadow'></span></div>
+						<h1 class="limbo" id="main">Limbo</h1><small class="limbo">v0.0.5</small>
+					</div>
+				</div>
+			</div>
+	   </div>
+	
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page" data-id="page-2">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h1 class="limbo">Goals</h1>
+						<h2 class="limbo" style="padding-top: 15px">since the last POC</h2>
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page" data-id="page-3">
+				<div class="wrapper">
+					<h2>Error Handling</h2>
+					<ul>
+						<li><h3>Better handling of Kasper errors and general exceptions</h3></li>
+    					<li><h3>Allow components to degrade gracefully</h3></li>
+    					<li><h3>Friendlier error messages and stack trace during development</h3></li>
+						<li><h3>Better handle routing, formatting and other errors in templates</h3></li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-1/page-3" class="ft-page" data-id="page-4">
+				<div class="wrapper">
+					<h2>Data Validation</h2>
+					<ul>
+						<li><h3>Better verify the integrity of data by introducing some level of type safety</h3></li>
+    					<li><h3>Validation of the app's routing config</h3></li>
+    					<li><h3>Valdiation of the app's configuration file</h3></li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-1/page-4" class="ft-page" data-id="page-5">
+				<div class="wrapper">
+					<h2>Code Organization and Workflow</h2>
+					<ul>
+						<li><h3>Improve how we manage client- and server-side dependencies</h3></li>
+    					<li><h3>Simplify the project organization</h3></li>
+    					<li><h3>Improve and simplify the development workflow and the production deployment</h3></li>
+						<li><h3>Make it easy to create a page, or build a component</h3></li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-1/page-5" class="ft-page" data-id="page-6">
+				<div class="wrapper">
+					<h2>Mocking, Unit Testing &amp; Localization</h2>
+					<ul>
+						<li><h3>Refactor and simplify the mocking framework</h3></li>
+						<li><h3>Describe how our proposed localization format could integrate with the current system</h3></li>
+    					<li><h3>Describe a workflow for front- and back-end unit testing</h3></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page" data-id="page-7">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h2 class="limbo">#1 - Error Handling</h2>
+					</div>
+				</div>
+			</div>
+			<div id="/section-2/page-2" class="ft-page" data-id="page-8">
+				<div class="wrapper">
+					<h2>Types of Errors - Templating</h2>
+					
+					<ul class="unstyled">
+						<li>&#10003; = Exception handled</li>
+						<li>R = at runtime</li>
+						<li>B = at buildtime</li>
+					</ul>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th>Template (Front)</th>
+								<th>Template (Back)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Syntax Error</td>
+								<td>&#10003; (B)</td>
+								<td>&#10003; (B)</td>
+							</tr>
+							<tr>
+								<td>Missing Handlebars Helper</td>
+								<td>&#10003; (R)</td>
+								<td>&#10003; (B)</td>
+							</tr>
+							<tr>
+								<td>Missing Handlebars Partial</td>
+								<td>&#10003; (R)</td>
+								<td>&#10003; (R)</td>
+							</tr>
+							<tr>
+								<td>Missing Handlebars Key</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Unknown Route</td>
+								<td>N/A (404)</td>
+								<td>&#10003; (R)</td>
+							</tr>	
+							<tr>
+								<td>Misconfigured Route</td>
+								<td>N/A (404)</td>
+								<td>&#10003; (R) or (B)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="/section-2/page-3" class="ft-page" data-id="page-9">
+				<div class="wrapper">
+					<h2>Types of Errors - JavaScript</h2>
+					
+					<ul class="unstyled">
+						<li>&#10003; = Exception handled</li>
+						<li>R = at runtime</li>
+						<li>B = at buildtime</li>
+					</ul>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th>JavaScript (Front)</th>
+								<th>JavaScript (Back)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Syntax Error</td>
+								<td>&#10003; (R)</td>
+								<td>&#10003; (B)</td>
+							</tr>
+							<tr>
+								<td>Kasper Communication Error</td>
+								<td>&#10003; (R)</td>
+								<td>&#10003; (R)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ft-section" data-id="section-3">
+			<div id="/section-3/page-1" class="ft-page" data-id="page-1">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h2 class="limbo">#2 - Data Validation</h2>
+					</div>
+				</div>
+			</div>
+			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
+				<div class="wrapper">
+					<h2>JSON Schema</h2>
+					<ul>
+    					<li><h3>Declarative way to describe the data we expect to send and receive</h3></li>
+						<li><h3>Can be used to:</h3>
+							<ul>
+								<li>Verify that data sent to Kasper is valid</li>
+								<li>Generate validation rules for the client-side</li>
+								<li>Generate &lt;form&gt; HTML templates</li>
+								<li>Generate fixtures for unit testing</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-3/page-3" class="ft-page" data-id="page-3">
+				<div class="wrapper">
+					<h2>Routing Validation</h2>
+					<ul>
+    					<li><h3>Routes are now validated when the server is started to check</h3>
+							<ul>
+								<li>That the route name does not override a reserved path</li>
+								<li>That the route controller exists</li>
+								<li>That the route controller callback exists</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-3/page-4" class="ft-page" data-id="page-4">
+				<div class="wrapper">
+					<h2>Template Validation</h2>
+					<ul>
+    					<li><h3>Server-side templates are validated when the server is started</h3></li>
+    					<li><h3>Component client-side templates are validated when the component is packaged</h3></li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-3/page-5" class="ft-page" data-id="page-5">
+				<div class="wrapper">
+					<h2>Configuration Validation</h2>
+					<ul>
+    					<li><h3>App configuration file is validated using the Convict module</h3></li>
+    					<li><h3>Syntax errors only will raise an exception - this will be extended in future</h3></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ft-section" data-id="section-4">
+		
+		    <div id="/section-4/page-1" class="ft-page" data-id="page-1">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h2 class="limbo">#3 Code Organization <br>&amp; Workflow</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div id="/section-4/page-2" class="ft-page" data-id="page-2">
+				<div class="wrapper">
+				    <h2>Dependencies, Templating &amp; Testing</h2>
+				    <table width="900">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Server-side</th>
+								<th>Client-side</th>
+							</tr>
+						</thead>
+    				    <tr>
+        				    <td>Dependency Management</td>
+        				    <td>NPM</td>
+							<td>Bower</td>
+    				    </tr>
+						<tr>
+        				    <td>Build</td>
+        				    <td>Grunt</td>
+							<td>Grunt</td>
+    				    </tr>
+    				    <tr>
+        				    <td>Bootstrapping</td>
+        				    <td>Yeoman</td>
+							<td>Yeoman</td>
+    				    </tr>
+						<tr>
+        				    <td>Testing</td>
+        				    <td>Jasmine/Mocha</td>
+							<td>Jasmine/Mocha</td>
+    				    </tr>
+				    </table>
+				</div>
+			</div>
+			
+			<div id="/section-4/page-3" class="ft-page" data-id="page-3">
+				<div class="wrapper">
+				    <h3>Pages vs Components</h3>
+				    <img src='http://bradfrostweb.com/wp-content/uploads/2013/06/atomic-design-process.png' />
+				</div>
+			</div>
+
+		</div>
+		
+		
+	</div>
+
+	<script src="../js/brav1toolbox.js"></script>
+	<script src="../js/flowtime.js"></script>
+	<script src="../assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		// Flowtime.parallaxInPx(true);
+		
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>
