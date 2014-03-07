@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>A Frontend Platform with Express/Node.js</title>
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700italic,300,400,800' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/presentation.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="background"></div>
+    <div id="impress" class="impress-not-supported">
+
+        <!-- Title screen -->
+        <div class="step section-title" data-x="0" data-y="0" data-scale="5">
+            <h1 class="big bold">
+                <span class="title-text1">A Frontend Platform with</span>
+                <span class="title-text2">express</span>
+                <span class="title-text3">&amp; Node.js</span>
+            </h1>
+        </div>
+
+        <!-- Existing Platform row -->
+
+        <div id="existing-platform" class="step" data-x="2500" data-y="-1200" data-scale="1">
+            <div class="big bold small-title">
+                <span id="existing-title-1">Existing</span>
+                <span id="existing-title-2">Platform</span>
+            </div>
+        </div>
+
+        <div id="existing-platform-2" class="step" data-x="3750" data-y="-1200" data-scale="1">
+                <img src="img/existing-platform.png" width="1000" height="800" style="border: 1px solid #333333">
+        </div>
+
+        <!-- Front/Back roles row -->
+
+        <div id="role" class="step" data-x="2500" data-y="-600" data-scale="1">
+            <div class="big bold small-title">
+                <span class="small-inset-title">Web &amp; Platform</span>
+                <span class="large-inset-title">developer roles</span>
+            </div>
+        </div>
+
+        <div id="role-front" class="step" data-x="3750" data-y="-600" data-scale="1">
+            <div class="small-title">Web</div>
+            <blockquote>
+                To manipulate and visualise back-end data on the client-side (browser, mobile, etc.)
+            </blockquote>
+        </div>
+
+        <div id="role-back" class="step" data-x="5000" data-y="-600" data-scale="1">
+            <div class="small-title">Platform</div>
+            <blockquote>
+                To write business logic and create clean APIs that can be consumed by client services
+            </blockquote>
+        </div>
+
+        <!-- Implications row -->
+
+        <div id="implications" class="step" data-x="2500" data-y="0" data-scale="1">
+            <div class="big bold small-title">
+                <span class="small-inset-title">How is that</span>
+                <span class="large-inset-title">working out?</span>
+            </div>
+        </div>
+
+        <div id="implications1" class="step" data-x="3750" data-y="0" data-scale="1">
+            <div class="bold title">
+                <span class="small-inset-title">Web Development</span><br>
+            </div>
+            <iframe src="http://www.screenr.com/embed/Luu7" width="420" height="315" frameborder="0"></iframe>
+            <iframe src="http://www.screenr.com/embed/juu7" width="420" height="315" frameborder="0"></iframe>
+        </div>
+
+        <div id="implications2" class="step slide" data-x="5000" data-y="0" data-scale="1">
+            <div class="bold title">
+                <span class="small-inset-title">Platform Development</span>
+            </div>
+            <ul>
+                <li>No clean division between presentation and business-logic in the JSPs</li>
+                <li>The same, slow environment when testing on the front-end</li>
+                <li>Developers must, occasionally, write JavaScript / CSS / HTML</li>
+            </ul>
+        </div>
+
+        <!-- Goals row -->
+        <div id="goals" class="step" data-x="2500" data-y="600" data-scale="1">
+            <div class="big bold small-title">
+                <span class="large-inset-title">Goals</span>
+            </div>
+        </div>
+
+        <div id="goals-1" class="step" data-x="3750" data-y="600" data-scale="1">
+            <div class="small-title">#1</div>
+            <blockquote>To cleanly separate web development and platform concerns</blockquote>
+        </div>
+
+        <div id="goals-2" class="step" data-x="5000" data-y="600" data-scale="1">
+            <div class="small-title">#2</div>
+            <blockquote>To end duplication of resources between front and back</blockquote>
+        </div>
+
+        <div id="goals-3" class="step" data-x="6250" data-y="600" data-scale="1">
+            <div class="small-title">#3</div>
+            <blockquote>To speed web development through mocking &amp; a faster environment</blockquote>
+        </div>
+
+        <div id="goals-4" class="step" data-x="7500" data-y="600" data-scale="1">
+            <div class="small-title">#4</div>
+            <blockquote>To develop a plan to cleanly transition existing code</blockquote>
+        </div>
+
+        <div id="goals-overview" class="step slide" data-x="8750" data-y="600" data-scale="1">
+            <div class="big bold small-title">Goals</div>
+            <ol>
+                <li><strong>#1</strong> To cleanly separate web development and platform concerns</li>
+                <li><strong>#2</strong> To end duplication of resources between front and back</li>
+                <li><strong>#3</strong> To speed web development through mocking &amp; a faster environment</li>
+                <li><strong>#4</strong> To develop a plan to cleanly transition existing code</li>
+            </ol>
+        </div>
+
+        <!-- Proposed platform title -->
+
+        <div id="proposition" class="step section-title" data-x="1500" data-y="1100" data-scale="10" data-rotate="90">
+            <div class="big bold small-title">
+                <span class="title-text1">Proposition: </span>
+                <span class="title-text2">express</span>
+                <span class="title-text3">&amp; Node.js</span>
+            </div>
+        </div>
+
+        <!-- Environment -->
+
+        <div id="environment" class="step" data-x="4000" data-y="6000" data-scale="2.5" data-rotate="90">
+            <h2 class="big bold small-title">
+                <span class="large-inset-title">Environment</span>
+            </h2>
+        </div>
+
+        <div id="environment-before" class="step" data-x="4000" data-y="9000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Existing</div>
+            <blockquote>
+                Java/Tomcat container with Maven for dependency management.
+            </blockquote>
+            <blockquote>
+                Takes around <strong>90 seconds</strong> from server start to page load; page reloads are slow.
+            </blockquote>
+        </div>
+
+        <div id="environment-after" class="step" data-x="4000" data-y="12000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Proposed</div>
+            <blockquote>
+                A Node.JS/Express Frontend - so 100% JavaScript / CSS / HTML.
+            </blockquote>
+            <blockquote>
+                Takes around <strong>15 seconds</strong> to launch; page loads are instantaneous.
+            </blockquote>
+        </div>
+
+        <!-- Templating row -->
+
+        <div id="templating" class="step" data-x="2800" data-y="6000" data-scale="2.5" data-rotate="90">
+            <h2 class="big bold small-title">
+                <span class="large-inset-title">Templates &amp; Localization</span>
+            </h2>
+        </div>
+
+        <div id="templating-before" class="step" data-x="2800" data-y="9000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Existing</div>
+            <blockquote>
+                JSP templates, containing a mix of presentation &amp; business logic.
+            </blockquote>
+            <blockquote>
+                JS templates in the browser - some embedded in JSPs, some loaded via Ajax, others inlined in JavaScript.
+            </blockquote>
+        </div>
+
+        <div id="templating-after" class="step" data-x="2800" data-y="12000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Proposed</div>
+            <blockquote>
+                Handlebars.js templating on the client *and* the server for page layout &amp; components.
+            </blockquote>
+            <blockquote>
+                <strong>So the same template is rendered everywhere</strong>
+            </blockquote>
+        </div>
+
+        <div id="localization" class="step" data-x="2800" data-y="15000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Bonus</div>
+            <blockquote>
+                <strong>Localization</strong> - The same localization is used for template rendering, and is available for client-side JavaScript use.
+            </blockquote>
+            <blockquote>
+                i.e. <strong>one</strong> localization resource, and no more JavaScript generation.
+            </blockquote>
+        </div>
+
+        <!-- Mocking row -->
+
+        <div id="mocking" class="step" data-x="1600" data-y="6000" data-scale="2.5" data-rotate="90">
+            <h2 class="big bold small-title">
+                <span class="large-inset-title">Mocks &amp; Testing</span>
+            </h2>
+        </div>
+
+        <div id="mocking-before" class="step" data-x="1600" data-y="9000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Existing</div>
+            <blockquote>
+                Every call to the platform must fetch real data from some backend database. Represents the slowest part
+                of the existing stack.
+            </blockquote>
+            <blockquote>
+                So if, for example, the server room floods - web development cannot proceed <b class="rotating">:(</b>
+            </blockquote>
+        </div>
+
+        <div id="mocking-after" class="step" data-x="1600" data-y="12000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Proposed</div>
+            <blockquote>
+                Mocks, generated locally from the JSON component model, can respond with appropriate data in
+                place of a real server.
+            </blockquote>
+            <blockquote>
+                No database = an exponentially faster development environment.
+            </blockquote>
+        </div>
+
+        <!-- Components -->
+
+        <div id="components" class="step" data-x="400" data-y="6000" data-scale="2.5" data-rotate="90">
+            <h2 class="big bold small-title">
+                <span class="large-inset-title">Components</span>
+            </h2>
+        </div>
+
+        <div id="components-before" class="step" data-x="400" data-y="9000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Existing</div>
+            <blockquote>
+                Monolithic pages that might contain many components &amp; their dependencies
+            </blockquote>
+        </div>
+
+        <div id="components-after" class="step" data-x="400" data-y="12000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Proposed</div>
+            <blockquote>
+                Code organised by "component", each containing their own dependencies (CSS/JS) and routes.
+            </blockquote>
+            <blockquote>
+                More work to be done to clarify the best organisation for Viadeo front-end development.
+            </blockquote>
+        </div>
+
+        <!-- Routes -->
+
+        <div id="routes" class="step" data-x="-800" data-y="6000" data-scale="2.5" data-rotate="90">
+            <h2 class="big bold small-title">
+                <span class="large-inset-title">Routes</span>
+            </h2>
+        </div>
+
+        <div id="routes-before" class="step" data-x="-800" data-y="9000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Existing</div>
+            <blockquote>
+                Routes configured in the Java controller; requires intervention by the backend developer to establish
+                or modify a route
+            </blockquote>
+        </div>
+
+        <div id="routes-after" class="step" data-x="-800" data-y="12000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Proposed</div>
+            <blockquote>
+                The platform exposes an API rather than handling routing. Routes can be created in the middleware component.
+            </blockquote>
+        </div>
+
+        <div id="routes-bonus" class="step" data-x="-800" data-y="15000" data-scale="2.5" data-rotate="90">
+            <div class="small-title">Bonus</div>
+            <blockquote>
+                <strong>SEO &amp; Accessibility</strong> - The same middleware route can respond to standard HTTP calls and Ajax requests
+            </blockquote>
+            <blockquote>
+                <strong>The site works with or without JavaScript</strong>
+            </blockquote>
+        </div>
+
+        <!-- New Platform -->
+
+        <div id="new-platform" class="step" data-x="-2000" data-y="6000" data-scale="2.5" data-rotate="90">
+            <h2 class="big bold small-title">
+                <div class="small-title">New Platform</div>
+            </h2>
+        </div>
+
+        <div id="new-platform-diagram" class="step" data-x="-2000" data-y="9000" data-scale="2.5" data-rotate="90">
+            <img src="img/new-platform.png" width="1000" height="800" style="border: 1px solid #333333">
+        </div>
+
+        <!-- Transitioning existing code title
+
+        <div id="transitioning-code" class="step section-title" data-x="3000" data-y="2200" data-scale="20" data-rotate="270">
+            <div class="big bold small-title">
+                <span class="title-text1">Transitioning</span>
+                <span class="title-text2">existing</span>
+                <span class="title-text3">code</span>
+            </div>
+        </div>     -->
+
+        <div id="questions" class="step section-title" data-x="3000" data-y="2200" data-z="-3000" data-scale="1" data-rotate="90">
+            <div class="big bold small-title">
+                <span class="title-text1">any</span>
+                <span class="title-text2">questions  <b class="rotating">?</b></span>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+</body>
