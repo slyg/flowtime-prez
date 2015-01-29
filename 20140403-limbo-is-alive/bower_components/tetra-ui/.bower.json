@@ -1,0 +1,39 @@
+{
+  "name": "tetra-ui",
+  "main": "dist/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "doc",
+    "spec",
+    "src/fonts",
+    "src/img",
+    "abu.json",
+    "Gruntfile.js",
+    "testem.json",
+    "package.json",
+    "index.html",
+    "*.sublime-project"
+  ],
+  "dependencies": {
+    "json2": "git://github.com/douglascrockford/JSON-js.git"
+  },
+  "devDependencies": {
+    "jquery": "~1.11.1"
+  },
+  "version": "3.0.3",
+  "homepage": "https://github.com/viadeo/tetra-ui",
+  "_release": "3.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.3",
+    "commit": "0e924e6af7cd48b5890d9a1a784d61b87fc8389e"
+  },
+  "_source": "git://github.com/viadeo/tetra-ui.git",
+  "_target": "~3.0.3",
+  "_originalSource": "tetra-ui",
+  "_direct": true
+}

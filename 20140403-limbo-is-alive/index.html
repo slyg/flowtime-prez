@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Limbo Update</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../assets/css/reset.css">
+	<link rel="stylesheet" href="../css/flowtime.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../assets/css/prism.css">
+	<link rel="stylesheet" href="bower_components/tetra-ui/dist/css/tetra-ui-doc-rtl.min.css">
+	<style type="text/css">.progressbar {background: #262626;}</style>
+	
+</head>
+<body>
+	
+	<div class="flowtime">
+	
+        <div class="ft-section" data-id="section-0">
+        	<div id="/section-0/page-1" class="ft-page">
+        		<div class="stack-center">
+        			<div class="stacked-center">
+        				<h1 class="h1" id="main">Limbo</h1>
+        			</div>
+        		</div>
+        	</div>
+        	<div id="/section-1/page-2" class="ft-page">
+				<div class="wrapper">
+					<h2 class="h2">Summary</h2>
+					<ul>
+						<li>What's Limbo</li>
+    					<li>What was achieved</li>
+    					<li>Roadmap</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+	
+		<div class="ft-section" data-id="section-1">
+			<div id="/section-1/page-1" class="ft-page">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h2 class="h2">What the hell is this limbo/tetra stuff ?</h2>
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-2" class="ft-page">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h3>Limbo is the nodejs app living on prod since 3 months</h3>
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-3" class="ft-page">
+				<div class="wrapper">
+					<h2 class="h2 pbxl">Core modules</h2>
+					<table class="table" border="0">
+						<tr>
+							<td class="tac">
+								<img src="img/logo-express.png" />
+								<p class="tac ptl">Web server</p>
+							</td>
+							<td class="tac">
+								<img src="img/logo-locomotive.png" />
+								<p class="tac ptl">MVC web framework</p>
+							</td>
+							<td class="tac">
+								<img src="img/logo-handlebars.png" />
+								<p class="tac ptl">Templating engine</p>
+							</td>
+							<td class="tac">
+								<img src="img/logo-i18next.png" />
+								<p class="tac ptl">Translation lib</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="/section-1/page-4" class="ft-page">
+				<div class="wrapper">
+					<h2 class="h2">Other components</h2>
+					<div class="rc">
+						<img class="img" src="img/logo-small-tetra-modules.png" />
+						<p class="bd ptxl pll">Tetra-modules<br /><small>(that is the tetra stuff)</small></p>
+					</div>
+					<div class="rc">
+						<img class="img" src="img/logo-small-lusca.png" />
+						<p class="bd ptxl pll">Lusca<br /><small>(application security for express apps, by Paypal)</small></p>
+					</div>
+					<div class="rc">
+						<img class="img" src="img/logo-small-backbone.png" />
+						<p class="bd ptxl pll">Backbone<br /><small>(JS lib, replaces tetra-js)</small></p>
+					</div>
+					<div class="rc">
+						<img class="img" src="img/logo-small-ember.png" />
+						<p class="bd ptxl pll">Ember<br /><small>(JS lib, client-side only apps)</small></p>
+					</div>
+				</div>
+			</div>
+			<div id="/section-1/page-5" class="ft-page">
+				<div class="wrapper">
+					<h2 class="h2">Tetra modules</h2>
+					<ul>
+						<li>UI <small>(UI rendering toolkit)</small></li>
+						<li>Error <small>(Express error rendering)</small></li>
+						<li>Config <small>(Configuration validation and management)</small></li>
+						<li>Routing <small>(Routing helper)</small></li>
+						<li>Templating <small>(Auto-discovery and naming of partials and helpers)</small></li>
+						<li>grunt-tetra-lang <small>(building merged i18next localization files for client and server)</small></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-2">
+			<div id="/section-2/page-1" class="ft-page">
+				<div class="stack-center">
+					<div class="stacked-center">
+						<h2 class="h2">What was achieved</h2>
+					</div>
+				</div>
+			</div>
+			<div id="/section-2/page-2" class="ft-page">
+				<div class="wrapper">
+					<h3 class="h3 pbxl">Original goals <small>(light version)</small></h3>
+					<ul>
+    					<li>Split presentation logic from business logic</li>
+						<li>Improve friendlyness of the dev. environment</li>
+    					<li>End duplication of resources between server and browser</li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-2/page-3" class="ft-page">
+				<div class="wrapper">
+					<h3 class="h3 pbxl">Today, a more simple stack</h3>
+					<ul>
+						<li>1 business api</li>
+						<li>1 scripting language</li>
+						<li>Based on simple conventions (controllers, services, middleware)</li>
+						<li>Testable and tested</li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-2/page-4" class="ft-page">
+				<div class="wrapper">
+					<h3 class="h3 pbxl">Templating libs before</h3>
+					<ul>
+						<li>JSP (server)</li>
+						<li>Prototype.js (browser)</li>
+						<li>EJS (browser)</li>
+						<li>Handlebars (browser)</li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-2/page-5" class="ft-page">
+				<div class="wrapper">
+					<h3 class="h3 pbxl">Templating libs after</h3>
+					<p class="tac ptxl"><img style="display: inline;" src="img/logo-small-handlebars.png" /></p>
+					<p class="tac">Handlebars (client <em>and</em> server)</p>
+				</div>
+			</div>
+			<div id="/section-2/page-6" class="ft-page">
+				<div class="wrapper">
+					<h3 class="h3 pbxl">Translation (client <em>and</em> server)</h3>
+					<p class="tac ptxl">1 key, a context, done.<br /><small>Translators can handle any combination by themselves</small></p>
+				</div>
+			</div>
+			<div id="/section-2/page-7" class="ft-page">
+				<div class="wrapper">
+					<h3 class="h3 pbxl">Time is money</h3>
+					<table class="table">
+						<tr>
+							<td width="40%">
+								<p class="pts pbn mbn mtn">Build + server launch<br /><small>2 min > ~30 sec</small></p>
+							</td>
+							<td>
+								<div class="progressbar pb-large mtl">
+								  <div class="pb-mask">
+								    <div class="pb-fill" style="width:25%;"></div>
+								  </div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="40%">
+								<p class="pts pbn mbn mtn">Server restart<br /><small>20 sec > less than 1 sec</small></p>
+							</td>
+							<td>
+								<div class="progressbar pb-large mtl">
+								  <div class="pb-mask">
+								    <div class="pb-fill" style="width:5%;"></div>
+								  </div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="40%">
+								<p class="pts pbn mbn mtn">Page reload<br /><small>5 to 30sec -> ~100ms</small></p>
+							</td>
+							<td>
+								<div class="progressbar pb-large mtl">
+								  <div class="pb-mask">
+								    <div class="pb-fill" style="width:2%;"></div>
+								  </div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<div id="/section-2/page-8" class="ft-page">
+				<div class="wrapper">
+					<h3 class="h3 pbxl">Coffee breaks</h3>
+					<img src="img/coffee.png" />
+					<img src="img/coffee.png" class="ptm" />
+				</div>
+			</div>
+			<div id="/section-2/page-9" class="ft-page">
+				<div class="wrapper">
+					<h3 class="h3">Rollouts</h3>
+					<img src="img/calendar-before.png" />
+				</div>
+			</div>
+			<div id="/section-2/page-10" class="ft-page">
+				<div class="wrapper">
+					<h3 class="h3">Rollouts</h3>
+					<img src="img/calendar-after.png" />
+				</div>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-3">
+			<div id="/section-3/page-1" class="ft-page">
+				<div class="wrapper">
+					<h2 class="h2">Current Limbo apps</h2>
+					<ul>
+						<li>Landing pages</li>
+						<li>Signup</li>
+						<li>Companies who recruit</li>
+						<li>Face to face</li>
+						<li>Onboarding</li>
+						<li>... new backoffice platform</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-4">
+			<div id="/section-4/page-1" class="ft-page">
+				<div class="stack-center">
+        			<div class="stacked-center">
+        				<h2 class="h2" id="main">Roadmap</h2>
+        			</div>
+        		</div>
+			</div>
+			<div id="/section-4/page-2" class="ft-page">
+				<div class="wrapper">
+					<h2 class="h2">At 1 month</h2>
+					<ul>
+						<li>Software engineering</li>
+						<ul>
+							<li>TDD methodology trainings</li>
+							<li>Navigation tests structuring improvements</li>
+							<li>Simplification of limbo project structure</li>
+							<li>Feature flipping</li>
+						</ul>
+						<li>Environment</li>
+						<ul>
+							<li>Safe sync deployment with platform</li>
+							<li>Stress tests</li>
+							<li>Build time improvements on dev</li>
+						</ul>
+						<li>BO first projects (landing pages)</li>
+					</ul>
+				</div>
+			</div>
+			<div id="/section-4/page-3" class="ft-page">
+				<div class="wrapper">
+					<h2 class="h2">After</h2>
+					<ul>
+						<li>Componentize tetra-ui</li>
+						<li>View-Model</li>
+						<ul>
+							<li>Standardise validation for mutable actions</li>
+							<li>Client/server sides validation</li>
+						</ul>
+						<li>Security improvements (Paypal Lusca extend + express conventions)</li>
+						<li>Extensible SEO filter</li>
+						<li>Errors logging tools and conventions</li>
+						<li>tetra-test module</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-5">
+			<div id="/section-5/page-1" class="ft-page">
+				<div class="stack-center">
+        			<div class="stacked-center">
+        				<h2 class="h2" id="main">Appendix</h2>
+        			</div>
+        		</div>
+			</div>
+			<div id="/section-5/page-1" class="ft-page">
+				<div class="stack-center">
+        			<div class="stacked-center">
+					<img src="img/traffic.png" />
+        			</div>
+				</div>
+			</div>
+			<div id="/section-5/page-2" class="ft-page">
+				<div class="stack-center">
+        			<div class="stacked-center">
+					<img src="img/platform-legacy.png" />
+        			</div>
+				</div>
+			</div>
+			<div id="/section-5/page-3" class="ft-page">
+				<div class="stack-center">
+        			<div class="stacked-center">
+					<img src="img/platform-limbo.png" />
+        			</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ft-section" data-id="section-6">
+			<div id="/section-6/page-1" class="ft-page">
+				<div class="stack-center">
+        			<div class="stacked-center">
+        				<h2 class="h2" id="main">Thx, <br /><br />Q/A, comments, get back to work</h2>
+        			</div>
+        		</div>
+			</div>
+		</div>
+		
+		
+	</div>
+
+	<script src="../js/brav1toolbox.js"></script>
+	<script src="../js/flowtime.js"></script>
+	<script src="../assets/js/prism.js"></script>
+
+	<script type="text/javascript">
+		// Configuration API test
+		//Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		// Flowtime.parallaxInPx(true);
+		
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+</body>
+</html>

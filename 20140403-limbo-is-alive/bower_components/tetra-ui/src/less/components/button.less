@@ -1,0 +1,297 @@
+.tetra-button (@button) {
+  @bgColor: ~"";
+  @hoverColor: ~"";
+  @borderColor: ~"";
+  @textColor: ~"";
+  @disabledTextColor: ~"";
+  .set-color (@button) when (@button = default) {
+    @bgColor : @buttonDefaultBgColor;
+    @hoverColor: @buttonDefaultHoverColor;
+    @borderColor: @buttonDefaultBorderColor;
+    @textColor:   @buttonDefaultTextColor;
+    @disabledTextColor: @buttonDefaultDisabledTextColor;
+  }
+  .set-color (@button) when (@button = primary) {
+    @bgColor : @buttonPrimaryBgColor;
+    @hoverColor: @buttonPrimaryHoverColor;
+    @borderColor: @buttonPrimaryBorderColor;
+    @textColor:   @buttonPrimaryTextColor;
+    @disabledTextColor: @buttonPrimaryDisabledTextColor;
+  }
+  .set-color (@button) when (@button = secondary) {
+    @bgColor : @buttonSecondaryBgColor;
+    @hoverColor: @buttonSecondaryHoverColor;
+    @borderColor: @buttonSecondaryBorderColor;
+    @textColor:   @buttonSecondaryTextColor;
+    @disabledTextColor: @buttonSecondaryDisabledTextColor;
+  }
+  .set-color (@button) when (@button = tertiary) {
+    @bgColor : @buttonTerBgColor;
+    @hoverColor: @buttonTerHoverColor;
+    @borderColor: @buttonTerBorderColor;
+    @textColor:   @buttonTerTextColor;
+    @disabledTextColor: @buttonTerDisabledTextColor;
+  }
+  .set-color(@button);
+  color: @textColor;
+  > span, > input, > button { color: @textColor; }
+  border: 1px solid @borderColor;
+  background: @bgColor;
+  .vicon {
+    color: @textColor;
+  }
+  &:hover,
+  &:focus {
+    background: @hoverColor;
+    color: @textColor;
+    border-color: @hoverColor;
+    .vicon {
+      color: @textColor;
+    }
+  }
+  &:active {
+    background: @bgColor;
+  }
+  &.btn-disabled,
+  &.btn-loading {
+    background: @bgColor;
+    border-color: @bgColor;
+    color: @disabledTextColor;
+    .vicon {
+      color: @disabledTextColor;
+    }
+  }
+
+  &.btn-inactive,
+  &.btn-inactive:hover,
+  &.btn-loading:focus {
+    border-color: @borderColor;
+    background-color: @bgColor;
+  }
+}
+
+.btn, .core-form .btn {
+  // General Properties
+  @_padding:           4px 15px;
+  @_borderRadius:        @borderRadiusS;
+
+  // Rules
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  padding: @_padding;
+  .border-radius(@_borderRadius);
+  position: relative;
+  text-decoration: none;
+  text-shadow: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  .box-shadow(none);
+  .user-select(none);
+
+  &:hover, &:focus {
+    text-decoration: none;
+    .box-shadow(0 1px 1px rgba(0,0,0,.1));
+  }
+  &:active, &.active {
+    .box-shadow(inset 0 1px 1px rgba(0,0,0,.2));
+  }
+
+  // Support for old layout
+  span {
+    input, button {
+      display:inline;
+      border:none;
+      padding:0;
+      line-height: @baseLineHeight;
+      background:none;
+      text-align:center;
+      padding:0;
+      margin:0;
+      cursor:pointer;
+      font-family:inherit;
+      font-size:inherit !important;
+    }
+    img {
+      vertical-align: text-top;
+    }
+  }
+
+  // Icon font
+
+  .vicon.btn-icon-before,
+  .vicon.btn-icon-after {
+    margin-top:-1px;
+    font-size: 7px;
+  }
+  .vicon.btn-icon-before {
+    .margin-left(@rtl, -9px);
+    .margin-right(@rtl, 0);
+  }
+  .vicon.btn-icon-after {
+    .margin-left(@rtl, 0);
+    .margin-right(@rtl, -9px);
+  }
+}
+
+.btn-default,
+.secEventsAction,
+.core-form .btn-default {
+  .tetra-button(default);
+}
+
+.btn-primary,
+.socialAction,
+.eventsAction,
+.core-form .btn-primary {
+  .tetra-button(primary);
+}
+
+.btn-secondary,
+.core-form .btn-secondary {
+  .tetra-button(secondary);
+}
+
+.btn-tertiary {
+  .tetra-button(tertiary);
+}
+
+.btn-small, .core-form .btn-small {
+  @_padding:     1px 10px;
+  @_borderRadius:  @borderRadiusS;
+
+  padding: @_padding;
+  .border-radius(@_borderRadius);
+  font-size: 11px;
+
+  .global-icon {
+    margin: -1px 0;
+  }
+
+}
+
+.btn-large, .core-form .btn-large {
+  @_padding:     7px @spacingM;
+  @_borderRadius:  @borderRadiusS;
+
+  padding: @_padding;
+  .border-radius(@_borderRadius);
+  font-size: 13px;
+}
+
+.btn-lead, .core-form .btn-lead {
+  position: relative;
+  z-index: 2;
+  padding: @spacingM;
+  font-size: 16px;
+}
+
+.btn-desc {
+  display: inline-block;
+  *display: inline; *zoom: 1;
+
+  dt {
+    text-align: center;
+    font-size: (@baseFontSize * .9);
+    color: @gray;
+  }
+}
+
+.btn-inactive,
+.btn-inactive:hover,
+.btn-loading:focus,
+.btn-disabled,
+.btn-disabled:hover,
+.btn-disabled:focus,
+.btn-disabled:active,
+.btn-loading,
+.btn-loading:hover,
+.btn-loading:focus,
+.btn-loading:active {
+  cursor: default;
+}
+
+.btn-loading,
+.btn-loading:hover,
+.btn-loading:focus,
+.btn-loading:active {
+  span {
+   display: inline-block;
+   overflow: hidden;
+   height: 0;
+   padding: 1em 0 0 0;
+   background: transparent url("@{img-buttons-dir}/loaders/default.gif") no-repeat 50% 0.3em;
+   *background-position-y: 0;
+  }
+}
+
+.btn-append {
+  @_borderRadius:  @borderRadiusS;
+  .border-radius-left(@rtl, 0);
+  .border-radius-right(@rtl, @_borderRadius);
+  .padding-right(@rtl, 4px);
+  .padding-left(@rtl, 0);
+  .margin-left(@rtl, -@_borderRadius*2);
+}
+
+.btn-icon {
+  padding: 10px 4px 6px;
+  .vicon {
+    font-size: 12px;
+    margin: 0;
+    *margin: -0.5em 0 0;
+    *line-height: 2.25em;
+  }
+}
+
+.btn-link {
+  background: none;
+  color: @linkColor;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: @linkColorHover;
+  }
+}
+
+.btn-pagination {
+  .padding (@rtl, (@spacingXs + 1), 13px, (@spacingXs + 1), 13px);
+  font-size: (@baseFontSize + 3);
+  color: @grayDark;
+  background: transparent;
+
+  .vicon {
+    color: @grayDark;
+
+    &.btn-icon-after,
+    &.btn-icon-before {
+      position: relative;
+      top: -1px;
+    }
+
+    &.btn-icon-after {
+      .margin (@rtl, 0, -@spacingS, 0, @spacingXs);
+    }
+    &.btn-icon-before {
+      .margin (@rtl, 0, @spacingXs, 0, -@spacingS);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background: tint(@linkColor, 20%);
+    color: @white;
+    box-shadow: none;
+
+    .vicon {
+      color: @white;
+    }
+  }
+
+  &:active {
+    background: @linkColor;
+  }
+}
